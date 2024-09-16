@@ -1,0 +1,24 @@
+.{
+    .name = "coordz",
+    .version = "0.1.0",
+    .minimum_zig_version = "0.13.0",
+
+    .dependencies = .{
+        .cova = .{
+            .url = "https://github.com/00jciv00/cova/archive/v0.10.1.tar.gz",
+            .hash = "1220f960c624e6b9217dffb40e3029bbb7a5c6ffa47b95cde163a2e8bba2f9bf0d44",
+        },
+        .vaxis = .{
+            .url = "https://github.com/00jciv00/libvaxis/archive/main.tar.gz",
+            .hash = "12209e3e6a758023f77c35c88723209ca78f3e8f386cef27ea73ab5ea36d6f21e14f",
+        },
+        .gps = .{
+            .path = "../zig-gps/",
+        }
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
